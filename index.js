@@ -13,6 +13,12 @@ app.get("/", (req, res) => {
     });
 });
 
+app.get("/teste", (req, res) =>  {
+    res.json({
+        message: "Testando"
+    })
+})
+
 app.listen(port, () => {
     console.log(`Backend rodando na porta ${port}!`);
 });
